@@ -3,7 +3,7 @@
 ## Clone repository : 
 git clone https://github.com/Fritzzzz1/PVP_Wordle-BackEnd-Prod
 
-## Make virtual environment
+## Make a new virtual environment
 mkvirtualenv <project_name> // virtualenv <project_name>
 
 ## Activate virtual environment
