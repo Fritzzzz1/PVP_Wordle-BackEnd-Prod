@@ -4,10 +4,10 @@ To run a local copy of the app :
 git clone https://github.com/Fritzzzz1/PVP_Wordle-BackEnd-Prod
 
 ## Make a new virtual environment
-mkvirtualenv <project_name> // virtualenv <project_name>
+mkvirtualenv <project_name> || virtualenv <project_name>
 
 ## Activate virtual environment
-workon <project_name> // ./scripts/activate.ps1
+workon <project_name>  || ./scripts/activate.ps1
 
 ## Install requirements
 pip install -r requirements.txt
