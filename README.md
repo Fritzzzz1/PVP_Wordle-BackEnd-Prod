@@ -1,4 +1,4 @@
-﻿# PVP_Wordle_BackEnd
+To run a local copy of the app :
 
 ## Clone repository : 
 git clone https://github.com/Fritzzzz1/PVP_Wordle-BackEnd-Prod
