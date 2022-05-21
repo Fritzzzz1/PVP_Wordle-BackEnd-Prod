@@ -28,9 +28,9 @@ Liran Friedman 20.4.22
 ## Built models for saving games:
     - So we have the main data structure for the database basically figured out:
         USER --(one to many)--> GAME --(one to one for bridging gap)--> Board --(one to many[6])--> Attempt
-    - Game has all game details - [won/lost, duration, secret(word)] and the relations : user (dad) board (child).
-    - Board links to 6 attempts (children) and has game(dad).
-    - Attempts have the number of attempt (1-6) and the word attempted, and the relation to board (dad).
+    - Game has all game details - [won/lost, duration, secret(word)] and the relations : user (parent) board (child).
+    - Board links to 6 attempts (children) and has game(parent).
+    - Attempts have the number of attempt (1-6) and the word attempted, and the relation to board (parent).
     - All fields have id's.
     - Relations are defined and accessible both ways.
     - on delete of user, games will assign defaultly to guest user. (for now the username "guest").
@@ -63,8 +63,8 @@ Liran Friedman, 26.4.22
 Liran Friedman, 27.4.22
 
 ## Some nice improvements:
-- game detail is now available both in /api/games/$ and in /api/players/$/games/$
-- games list by player is displayed in api/players/$/games and all games displayed in api/games
+- game detail is now available both in /api/games/{game_id} and in /api/players/{player_id}/games/{game_id}
+- games list by player is displayed in api/players/{player_id}/games and all games displayed in api/games/
 - changes in data structure for save game request:
 
           { ** NO LONGER NEEDED game_id (int) **
